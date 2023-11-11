@@ -1,0 +1,318 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(237, 49%, 15%);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.rules-button {
+    height: 3em;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.rules-button button{
+    width: 150px;
+    color: white;
+    background-color: hsl(237, 49%, 15%);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.rock {
+    height: 140px;
+    border-radius: 70px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.bon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 15px;
+    height: 7em;
+    border-radius: 8px;
+    width: 10em;
+}
+
+.bon div {
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#SCISSORS {
+    border: 10px solid hsl(39, 89%, 49%);
+    position: absolute;
+    margin-bottom: 20em;
+    margin-left: 20em;
+}
+
+#ROCK {
+    border: 10px solid hsl(349, 71%, 52%);
+    position: absolute;
+    margin-top: 17em;
+}
+
+#PAPER {
+    margin-bottom: 20em;
+    margin-right: 20em;
+    border: 10px solid hsl(230, 89%, 62%);
+    position: absolute;
+}
+
+.game {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.score span {
+    font-size: 34px;
+    padding-bottom: 10px;
+    color: hsl(229, 25%, 31%);
+}
+
+.score div {
+    font-size: 24px;
+    padding-top: 10px;
+    font-weight: bolder;
+    color: hsl(229, 64%, 46%);
+}
+
+.score {
+    background-color: white;
+    height: 6em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-right: 20px;
+    width: 9em;
+}
+
+.scores {
+    width: 40em;
+    height: 7em;
+    display: flex;
+    border: 3px solid white;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picking {
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40em;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 20px solid red;
+    margin-bottom: 70px;
+}
+
+.WIN {
+    font-size: 24px;
+    font-weight: bold;
+    display: none; /* set display to none by default */
+}
+
+/* Add this class to the active element */
+.WIN.active {
+    display: flex;
+}
+
+
+.play-again {
+    width: 170px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.house {
+    height: 20em;
+    margin-top: 100px;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.you {
+    height: 20em;
+    margin-top: 100px;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dicided {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.picked {
+    display: flex;
+    flex-direction: row;
+}
+
+#goal {
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.types img {
+    width: 250px;
+    height: 220px;
+}
+
+
+.rule-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+    width: 40em;
+    height: 40em;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules {
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.bottom button{
+    height: 80px;
+    width: 80px;
+    border: 6px solid blueviolet;
+    border-radius: 50px;
+}
+
+.top button {
+    height: 80px;
+    width: 80px;
+    border: 6px solid blueviolet;
+    border-radius: 50px;
+}
+
+.types {
+    height: 16em;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    width: 230px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.closss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.top {
+    width: 260px;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rules-icon {
+    display: flex;
+    flex-direction: row;
+    width: 18em;
+    align-items: center;
+    height: 4em;
+    justify-content: space-between;
+}
+
+.close {
+    height: 35px;
+    width: 35px;
+}
+
+.all-rules {
+    color: hsl(229, 25%, 31%);
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+
+#winner.active, #loser.active, #draw.active {
+    display: flex;
+}
