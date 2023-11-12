@@ -1,11 +1,11 @@
 body {
     display: flex;
     justify-content: center;
+    align-content: center;
+    margin-top: 5em;
     align-items: center;
-    margin: 0;
     background-color: hsl(237, 49%, 15%);
-    width: 100%;
-    height: 100vh;
+    overflow: hidden;
     flex-direction: column;
 }
 
@@ -48,7 +48,7 @@ body {
 .bon div {
     color: white;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 #SCISSORS {
@@ -104,7 +104,7 @@ body {
 }
 
 .scores {
-    width: 40em;
+    width: 40rem;
     height: 7em;
     display: flex;
     border: 3px solid white;
@@ -312,7 +312,20 @@ body {
     font-weight: bolder;
 }
 
+#won{
+    color: hsl(229, 25%, 31%);
+    font-weight: bold;
+}
+
+#lost {
+    color: red;
+}
 
 #winner.active, #loser.active, #draw.active {
     display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+
+
 }

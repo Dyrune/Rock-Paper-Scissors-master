@@ -63,7 +63,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Show the choices container
         choicesContainer.style.display = 'flex';
+
+        // Enable the buttons only if the game is not won or lost
+        if (scoreIndex !== 0 && scoreIndex !== 10) {
+            enableButtons();
+        }
     });
+
+
+    // Function to determine the winner
 
     // Function to determine the winner
     function determineWinner(playerChoice, houseChoice) {
@@ -80,38 +88,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (playerChoice === houseChoice) {
             drawSpan.style.display = 'flex';
+            updateScore('draw');
         } else if (
             (playerChoice === 'PAPER' && houseChoice === 'ROCK') ||
             (playerChoice === 'ROCK' && houseChoice === 'SCISSORS') ||
             (playerChoice === 'SCISSORS' && houseChoice === 'PAPER')
         ) {
             winnerSpan.style.display = 'flex';
+            updateScore('win');
         } else {
             loserSpan.style.display = 'flex';
+            updateScore('lose');
         }
     }
+
 
     // Function to update the score
-    function updateScore() {
+
+    // Function to update the score
+    function updateScore(outcome) {
         if (scoreIndex > 0 && scoreIndex < 10) {
             // Increment or decrement the score index based on the outcome
-            // Implement your logic here for updating the score
-            // For example, increment scoreIndex for a win and decrement for a loss
-            // Modify this logic based on your specific win/loss conditions
-            // Here's a simple example:
-            // if (playerWins) {
-            //     scoreIndex++;
-            // } else {
-            //     scoreIndex--;
-            // }
+            // Adjust the logic based on your specific win/loss conditions
+            // For example, if it's a win, increment; if it's a loss, decrement
+            // If it's a draw, don't change the score
 
-            // For now, let's increment for every click
-            scoreIndex++;
+            if (outcome === 'win') {
+                scoreIndex++;
+            } else if (outcome === 'lose') {
+                scoreIndex--;
+            }
+
+            // Display the corresponding score
+            updateScoreDisplay();
         }
-
-        // Display the corresponding score
-        updateScoreDisplay();
     }
+
 
     // Function to display the correct score span
     function updateScoreDisplay() {
