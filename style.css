@@ -325,7 +325,121 @@ body {
     display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whole-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scores {
+        width: 20em;
+        display: flex;
+        height: 7rem;
+        border: 2px solid white;
+        justify-content: center;
+    }
+
+    .picking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25rem;
+        width: 20rem;
+    }
+
+    .rock {
+        width: 100px;
+        height: 100px;
+    }
+
+    #PAPER img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #SCISSORS img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #ROCK img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .pick img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #SCISSORS {
+        margin-bottom: 15em;
+        margin-left: 15em;
+    }
+
+    #ROCK {
+        margin-top: 15em;
+    }
+
+    #PAPER {
+        margin-bottom: 15em;
+        margin-right: 15em;
+    }
+
+    .rules-button {
+        display: flex;
+        width: 200px;
+        margin-left: 50px;
+        margin-top: 70px;
+        justify-content: center;
+    }
+
+    .picked {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .circle {
+        margin: 0;
+        padding: 0;
+        width: 120px;
+        height: 130px;
+    }
+
+    .you {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: 130px;
+    }
+
+    .house {
+        margin: 0;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #goal {
+        margin: 0;
+    }
 
 }
