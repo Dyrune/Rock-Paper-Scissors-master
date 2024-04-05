@@ -325,7 +325,7 @@ body {
     display: flex;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 
     body {
         display: flex;
